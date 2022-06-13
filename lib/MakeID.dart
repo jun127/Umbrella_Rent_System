@@ -343,7 +343,7 @@ class _MakeIDState extends State<MakeID> {
                                       builder: (BuildContext context) =>
                                           AlertDialog(
                                             title: Text('학번 오류'),
-                                            content: const Text('정화한 학번이 아닙니다.'),
+                                            content: const Text('정확한 학번이 아닙니다.'),
                                             actions: <Widget>[
                                               TextButton(
                                                 onPressed: () {

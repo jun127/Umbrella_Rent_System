@@ -816,7 +816,7 @@ class BluetoothOffScreen extends StatelessWidget {
             ),
             Text(
               'Bluetooth Adapter is ${state != null ? state.toString().substring(15) : 'not available'}.',),
-            SizedBox(
+           /* SizedBox(
               height: 40,
               width: 100,
               child: OutlinedButton(
@@ -836,7 +836,7 @@ class BluetoothOffScreen extends StatelessWidget {
                     )
                 ),
               ),
-            ),
+            ),*/
           ],
         ),
       ),
