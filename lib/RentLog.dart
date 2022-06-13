@@ -61,6 +61,37 @@ class _RentLogState extends State<RentLog> {
                           children: [
                             Icon(Icons.umbrella, size: 70, color: Colors.white,), Text('우산 현황', textAlign: TextAlign.start,
                               style: TextStyle(fontSize: 70, color: Colors.white70),),
+                            Container(width: 300,),
+                            IconButton(
+                                onPressed: (){
+                                  setState(() {user1 = umuser['um1'];});
+                                  um['um1']=='1' ? setState(() {rLog1 = true;}) : setState(() {rLog1 = false;});
+                                  setState(() {user2 = umuser['um2'];});
+                                  um['um2']=='1' ? setState(() {rLog2 = true;}) : setState(() {rLog2 = false;});
+                                  setState(() {user3 = umuser['um3'];});
+                                  um['um3']=='1' ? setState(() {rLog3 = true;}) : setState(() {rLog3 = false;});
+                                  setState(() {user4 = umuser['um4'];});
+                                  um['um4']=='1' ? setState(() {rLog4 = true;}) : setState(() {rLog4 = false;});
+                                  setState(() {user5 = umuser['um5'];});
+                                  um['um5']=='1' ? setState(() {rLog5 = true;}) : setState(() {rLog5 = false;});
+                                  setState(() {user6 = umuser['um6'];});
+                                  um['um6']=='1' ? setState(() {rLog6 = true;}) : setState(() {rLog6 = false;});
+                                  setState(() {user7 = umuser['um7'];});
+                                  um['um7']=='1' ? setState(() {rLog7 = true;}) : setState(() {rLog7 = false;});
+                                  setState(() {user8 = umuser['um8'];});
+                                  um['um8']=='1' ? setState(() {rLog8 = true;}) : setState(() {rLog8 = false;});
+                                  setState(() {user9 = umuser['um9'];});
+                                  um['um9']=='1' ? setState(() {rLog9 = true;}) : setState(() {rLog9 = false;});
+                                  setState(() {user10 = umuser['um10'];});
+                                  um['um10']=='1' ? setState(() {rLog10 = true;}) : setState(() {rLog10 = false;});
+                                  setState(() {user11 = umuser['um11'];});
+                                  um['um11']=='1' ? setState(() {rLog11 = true;}) : setState(() {rLog11 = false;});
+                                  setState(() {user12 = umuser['um12'];});
+                                  um['um12']=='1' ? setState(() {rLog12 = true;}) : setState(() {rLog12 = false;});
+
+                                },
+                                icon: Icon(Icons.cached, size: 50, color: Colors.white,)
+                            ),
                           ]
                       ),
                     ],
@@ -77,17 +108,19 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산1', style: TextStyle(fontSize: 50)), Text('대여한 사람: $user1', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산1', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user1', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                           /* IconButton(
                                 onPressed: (){
                                   setState(() {user1 = umuser['um1'];});
                                   um['um1']=='1' ? setState(() {rLog1 = true;}) : setState(() {rLog1 = false;});
                                   },
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog1 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog1 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -101,16 +134,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산2', style: TextStyle(fontSize: 50)), Text('대여한 사람: $user2', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산2', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user2', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user2 = umuser['um2'];});
                                   um['um2']=='1' ? setState(() {rLog2 = true;}) : setState(() {rLog2 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog2 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog2 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -124,16 +159,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산3', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user3', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산3', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user3', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user3 = umuser['um3'];});
                                   um['um3']=='1' ? setState(() {rLog3 = true;}) : setState(() {rLog3 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog3 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog3 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -147,16 +184,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산4', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user4', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산4', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user4', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user4 = umuser['um4'];});
                                   um['um4']=='1' ? setState(() {rLog4 = true;}) : setState(() {rLog4 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog4 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog4 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -170,16 +209,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산5', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user5', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산5', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user5', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user5 = umuser['um5'];});
                                   um['um5']=='1' ? setState(() {rLog5 = true;}) : setState(() {rLog5 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog5 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog5 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -193,16 +234,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산6', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user6', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산6', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user6', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user6 = umuser['um6'];});
                                   um['um6']=='1' ? setState(() {rLog6 = true;}) : setState(() {rLog6 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog6 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog6 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -216,16 +259,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산7', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user7', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산7', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user7', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user7 = umuser['um7'];});
                                   um['um7']=='1' ? setState(() {rLog7 = true;}) : setState(() {rLog7 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog7 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog7 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -239,16 +284,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산8', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user8', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산8', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user8', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user8 = umuser['um8'];});
                                   um['um8']=='1' ? setState(() {rLog8 = true;}) : setState(() {rLog8 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog8 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog8 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -262,16 +309,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산9', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user9', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산9', style: TextStyle(fontSize: 50)),
+                            Container(width: 35,),
+                            Text('    대여한 사람: $user9', style: TextStyle(fontSize: 20)),
+                            Container(width: 240,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user9 = umuser['um9'];});
                                   um['um9']=='1' ? setState(() {rLog9 = true;}) : setState(() {rLog9 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog9 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog9 == true ? Text('대여중   ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -285,16 +334,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산10', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user10', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산10', style: TextStyle(fontSize: 50)),
+                            Container(width: 30,),
+                            Text('대여한 사람: $user10', style: TextStyle(fontSize: 20)),
+                            Container(width: 230,),
+                           /* IconButton(
                                 onPressed: (){
                                   setState(() {user10 = umuser['um10'];});
                                   um['um10']=='1' ? setState(() {rLog10 = true;}) : setState(() {rLog10 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog10 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog10 == true ? Text('대여중    ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -308,16 +359,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산11', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user11', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산11', style: TextStyle(fontSize: 50)),
+                            Container(width: 30,),
+                            Text('대여한 사람: $user11', style: TextStyle(fontSize: 20)),
+                            Container(width: 230,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user11 = umuser['um11'];});
                                   um['um11']=='1' ? setState(() {rLog11 = true;}) : setState(() {rLog11 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog11 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog11 == true ? Text('대여중    ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 
@@ -331,16 +384,18 @@ class _RentLogState extends State<RentLog> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('우산12', style: TextStyle(fontSize: 50)),Text('대여한 사람: $user12', style: TextStyle(fontSize: 20)),
-                            Container(width: 260,),
-                            IconButton(
+                            Text('우산12', style: TextStyle(fontSize: 50)),
+                            Container(width: 30,),
+                            Text('대여한 사람: $user12', style: TextStyle(fontSize: 20)),
+                            Container(width: 230,),
+                            /*IconButton(
                                 onPressed: (){
                                   setState(() {user12 = umuser['um12'];});
                                   um['um12']=='1' ? setState(() {rLog12 = true;}) : setState(() {rLog12 = false;});},
                                 icon: Icon(Icons.cached, size: 40,)
-                            ),
+                            ),*/
                             Container(width: 20),
-                            rLog12 == true ? Text('대여중', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
+                            rLog12 == true ? Text('대여중    ', style: TextStyle(fontSize: 40, color: Colors.red)) : Text('대여가능', style: TextStyle(fontSize: 40, color: Colors. green))
                           ],
                         )
 

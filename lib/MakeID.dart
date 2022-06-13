@@ -104,7 +104,15 @@ class _MakeIDState extends State<MakeID> {
           preferredSize: Size.fromHeight(70.0), // here the desired height
           child: AppBar(
             title: Text("양심우산 무인 대여시스템", style: TextStyle(fontSize: 30),),
-            leading: Icon(Icons.home, size: 30,),
+            leading: IconButton(icon: Icon(Icons.home, size: 30,), onPressed: ()=> {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        RentLog()),
+              )
+            },
+            ),
             backgroundColor: Colors.black,
             actions: [
               IconButton(
