@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
    <application
-        android:label="양심우산 무인 대여시스템(태블릿용)"
+        android:label="양심우산 무인 대여시스템"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
