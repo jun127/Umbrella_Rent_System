@@ -803,19 +803,39 @@ class BluetoothOffScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Icon(
+            Icon(
               Icons.bluetooth_disabled,
               size: 200.0,
-              color: Colors.white54,
+              color: Colors.black38,
             ),
             Text(
-              'Bluetooth Adapter is ${state != null ? state.toString().substring(15) : 'not available'}.',
-
+              'Bluetooth Adapter is ${state != null ? state.toString().substring(15) : 'not available'}.',),
+            SizedBox(
+              height: 40,
+              width: 100,
+              child: OutlinedButton(
+                onPressed: () async {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FindDevicesScreen()),
+                  );
+                },
+                child: const Text('NEXT', style: TextStyle(fontSize: 20)),
+                style: OutlinedButton.styleFrom(
+                    primary: Colors.black,
+                    side: const BorderSide(
+                        color: Colors.black,
+                        width: 1.5
+                    )
+                ),
+              ),
             ),
           ],
         ),
