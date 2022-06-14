@@ -2,11 +2,8 @@
 
 남악고등학교 정보화 한마당 제출용 레퍼지토리입니다. 대부분의 파일은 안드로이드 어플리케이션을 구성하는 파일입니다. 
 Umbrella_RentSystem_Arduino, Umbrlla_Rent_System_apk 폴더만 앱을 구성하는 파일이 아닙니다.
- 
- 
- 
- 
- 
+
+
  
 ## Umbrella_RentSystem_Arduino
 
@@ -14,17 +11,8 @@ Umbrella_RentSystem_Arduino, Umbrlla_Rent_System_apk 폴더만 앱을 구성하�
  
  
  
- 
- 
- 
-
- 
 ## Umbrlla_Rent_System_apk
 
 확장자가 .apk인 안드로이드 앱설치 파일이 들어있는 폴더입니다. 안드로이드 기기에 다운로드 후 어플리케이션을 설치할 수 있습니다. 다만 앱의 시작이 블루투스 연결인데 어떤 이유해서인지 디버깅 파일에서는 작동하지만 릴리즈 파일에서는 작동하지 않습니다. 향후 고쳐야할 사항 중 하나 입니다.
     
-     
-      
-       
-        
-         
+   
