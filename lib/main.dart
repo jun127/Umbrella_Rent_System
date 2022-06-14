@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Login.dart';
+import 'ex.dart';
 import 'dart:async';
 
 
@@ -1036,7 +1036,7 @@ class DeviceScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Login()),
+                                  builder: (context) => ex()),
                             );
                           },
                           child: const Text('NEXT', style: TextStyle(fontSize: 20)),
