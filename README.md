@@ -1,12 +1,21 @@
-# umbrella_rent_system
+# Umbrella_Rent_System
 
 남악고등학교 정보화 한마당 제출용 레퍼지토리입니다. 대부분의 파일은 안드로이드 어플리케이션을 구성하는 파일입니다. 
 Umbrella_RentSystem_Arduino, Umbrlla_Rent_System_apk 폴더만 앱을 구성하는 파일이 아닙니다.
 
 
+
+
+
+
 # Umbrella_RentSystem_Arduino
 
 확장자가 .ino인 아두이노의 코드와 확장자가 .fzz인 회로도가 있는 폴더입니다. 또한 회로도 파일은 작동 프로그램이 따로 있기 때문에 이미지 파일 또한 업로드 되어 있습니다. 
+
+
+
+
+
 
 
 
